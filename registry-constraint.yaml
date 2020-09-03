@@ -1,0 +1,12 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sRequiredRegistry
+metadata:
+ name: enforce-image-from-corp-registry
+spec:
+ match:
+  kinds:
+  - apiGroups: [""]
+    kinds: ["Pod"]
+ parameters:
+  registry: "quay.io/valex"
+
