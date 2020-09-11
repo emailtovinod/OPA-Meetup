@@ -4,9 +4,9 @@ metadata:
  name: enforce-image-from-corp-registry
 spec:
  match:
-  kinds:
-  - apiGroups: [""]
-    kinds: ["Pod"]
+   kinds:
+   - apiGroups: [""]
+     kinds: ["Pod"]
  parameters:
    registry: "quay.io/valex"
 
