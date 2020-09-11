@@ -7,6 +7,6 @@ spec:
   kinds:
   - apiGroups: [""]
     kinds: ["Pod"]
-  parameters:
+ parameters:
    registry: "quay.io/valex"
 
